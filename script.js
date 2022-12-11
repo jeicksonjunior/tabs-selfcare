@@ -1,7 +1,14 @@
-let btn = document.getElementById('#btn')
+function clickTab(idTab) {
+    let desc = document.getElementsByClassName('tab-desc');
 
-function clickTab() {
-    alert('oi');
+    for (let i = 0; i < desc.length; i++) {
+        desc[i].style.display = 'none';
+    }
+
+    document.getElementById(idTab).style.display = 'block';
 }
 
-btn.addEventListener('click', clickTab)
+
+
+
+
